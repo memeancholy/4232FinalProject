@@ -12,7 +12,7 @@ public class AIDamage : MonoBehaviour
     {
         armor -= amount;
 
-        if (armor <= 0f)
+        if (armor <= 0)
         {
             GetComponent<NavMeshAgent>().speed = 0;
             Debug.Log("Stopped!");

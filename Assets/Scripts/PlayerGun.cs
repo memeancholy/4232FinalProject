@@ -40,7 +40,7 @@ public class PlayerGun : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             AIDamage damaged = hit.transform.GetComponent<AIDamage>();
-            if (damaged != null)
+            if (damaged != null && damaged.armor >= 0)
             {
                 damaged.TakeDamage(damage);
             }

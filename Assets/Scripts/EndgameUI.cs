@@ -14,6 +14,7 @@ public class EndgameUI : MonoBehaviour
     void Start()
     {
         score = GetComponent<Text>();
+        endMenuUI.SetActive(false);
     }
 
     void Update()
@@ -35,10 +36,12 @@ public class EndgameUI : MonoBehaviour
     {
         Time.timeScale = 0f;
         endMenuUI.SetActive(true);
+        scoreValue = 0;
     }
 
     public void BacktoMain()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - SceneManager.GetActiveScene().buildIndex);
+        endMenuUI.SetActive(false);
     }
 }
