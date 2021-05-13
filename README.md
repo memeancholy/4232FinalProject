@@ -1,5 +1,5 @@
 # 4232FinalProject
-Final project for my ITCS 4232 class.
+Final project for my ITCS 4232 class. Assets not owned by me are the asphalt textures, the gun noises, and any standard Unity assets. 
 
 Known Issues/Quirks:
 
